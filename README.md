@@ -1,7 +1,18 @@
 # TechLadies Bootcamp 4 Pre-bootcamp Workshop #3: React, Express and MongoDB basics
 
 ## Homework
-Install NodeJS properly! https://stackoverflow.com/questions/11177954/how-do-i-completely-uninstall-node-js-and-reinstall-from-beginning-mac-os-x
+For those on Macs who came to workshop 2 and ended up installing NodeJS through Homebrew instead of asdf as documented in the setup guide, you can take the time to install NodeJS properly!
+
+First you have to uninstall the node you installed through Homebrew by running the following commands in your terminal:
+
+```bash
+brew uninstall node;
+brew prune;
+rm -f /usr/local/bin/npm /usr/local/lib/dtrace/node.d;
+rm -rf ~/.npm;
+```
+
+Now you can follow the [setup guide instructions to install NodeJS with asdf!](https://github.com/TechLadies/bootcamp-4-technical-task/blob/master/setup-guide.md#nodejs-and-npm)
 
 ## Pre-requisites
 You should have come for workshop 2 and built a simple Todo app following the code [here](https://github.com/spinningarrow/react-todo-list). We will be extending whatever you built in workshop 2.
@@ -85,7 +96,7 @@ Concepts:
     - Reading: [Introduction to MongoDB](https://docs.mongodb.com/manual/introduction/)
 
 Hands-on:
-1. Sign-up for an mLab account 
+1. Sign-up for an mLab account
 2. Exploring the mongo console and CRUD operations
     - Reading: [MongoDB CRUD operations](https://docs.mongodb.com/manual/crud/)
 
