@@ -4,7 +4,7 @@ body {
     background: rgb(240, 240, 240);
     /* display: flex; */
     font-family: sans-serif;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     height: 100vh;
     justify-content: center;
     margin: 0;
@@ -45,13 +45,22 @@ p {
 
 header {
     background-color: #3F51B5;
+    min-height: 70px;
 }
 
-.todos {
+header h1 {
+    margin: 0;
+}
+
+#todos, #about {
     background: white;
     box-shadow: 0px 1px 15px 0px #999;
     padding-bottom: 2rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+#todos {
+    font-size: 3rem;
 }
 

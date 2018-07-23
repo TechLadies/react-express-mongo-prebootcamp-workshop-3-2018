@@ -30,7 +30,7 @@ export class Todos extends React.Component {
 
   render() {
     return (
-      <div class="todos">
+      <div id="todos">
         <h1>My awesome todo list</h1>
         <ul>
           {this.state.todos.map(a => {
