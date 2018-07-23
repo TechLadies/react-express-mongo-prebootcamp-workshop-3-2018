@@ -19,29 +19,29 @@ Hands-on:
 ### More React (~2hrs)
 Concepts:
 1. Understanding the DOM (Document Object Model)
-  - Reading: [What is the DOM?](https://css-tricks.com/dom/)
+    - Reading: [What is the DOM?](https://css-tricks.com/dom/)
 2. React and the Virtual DOM
-  - Reading: [React: The Virtual DOM](https://www.codecademy.com/articles/react-virtual-dom)
+    - Reading: [React: The Virtual DOM](https://www.codecademy.com/articles/react-virtual-dom)
 3. State and Props of a React Component
 
 Hands-on:
 1. Breaking out our Todo app into multiple components
-  - Adding a Header component
-  - Adding an About component
-  - Passing a `title` prop to our Todo component
+    - Adding a Header component
+    - Adding an About component
+    - Passing a `title` prop to our Todo component
 
 Concepts:
 1. When does a React component re-render
 2. React Component lifecycle
-  - React docs: [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+    - React docs: [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
 
 Hands-on:
 1. Making an API call on `componentDidMount` to show a random cat image
-  - Reading: [The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+    - Reading: [The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 Concepts:
 1. Client-side routing
-  - Reading: [Server-side vs Client-side routing](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
+    - Reading: [Server-side vs Client-side routing](https://medium.com/@wilbo/server-side-vs-client-side-routing-71d710e9227f)
 
 Hands-on:
 1. Implementing client-side routing with React Router
@@ -54,9 +54,9 @@ Setup:
 Concepts:
 1. Front-end, Back-end, Full-stack
 2. API calls and HTTP methods
-  - Reading: [What is an API? In English, please](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
-  - Reading: [Hyper Text Protocol Explained](https://www.lifewire.com/hypertext-transfer-protocol-817944)
-  - Reading: [7 HTTP methods every web developer should know](https://assertible.com/blog/7-http-methods-every-web-developer-should-know-and-how-to-test-them)
+    - Reading: [What is an API? In English, please](https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82)
+    - Reading: [Hyper Text Protocol Explained](https://www.lifewire.com/hypertext-transfer-protocol-817944)
+    - Reading: [7 HTTP methods every web developer should know](https://assertible.com/blog/7-http-methods-every-web-developer-should-know-and-how-to-test-them)
 
 Hands-on:
 1. Creating a simple express application which returns a list of todos
@@ -64,13 +64,13 @@ Hands-on:
 
 Concepts:
 1. Routing
-  - Reading: [Basic routing in Express](https://expressjs.com/en/starter/basic-routing.html)
-  - Reading: [Express Routing guide](https://expressjs.com/en/guide/routing.html)
+    - Reading: [Basic routing in Express](https://expressjs.com/en/starter/basic-routing.html)
+    - Reading: [Express Routing guide](https://expressjs.com/en/guide/routing.html)
 2. Middleware:
-  - Reading: [Writing middleware in Express](https://expressjs.com/en/guide/writing-middleware.html)
-  - Reading: [Using middleware in Express](https://expressjs.com/en/guide/using-middleware.html)
-3. RESTful routes
-  - Reading: [Restful Routing](https://medium.com/@thejasonfile/restful-routing-2056f799223e)
+    - Reading: [Writing middleware in Express](https://expressjs.com/en/guide/writing-middleware.html)
+    - Reading: [Using middleware in Express](https://expressjs.com/en/guide/using-middleware.html)
+  3. RESTful routes
+    - Reading: [Restful Routing](https://medium.com/@thejasonfile/restful-routing-2056f799223e)
 
 Hands-on:
 1. Nesting routers
@@ -80,19 +80,19 @@ Hands-on:
 Concepts:
 1. Persistence layer
 2. Databases and MongoDB
-  - Reading: [Introduction to Databases](https://en.wikiversity.org/wiki/Introduction_to_Databases)
-  - Reading: [The Definitive Guide to NoSQL databases](https://www.toptal.com/database/the-definitive-guide-to-nosql-databases)
-  - Reading: [Introduction to MongoDB](https://docs.mongodb.com/manual/introduction/)
+    - Reading: [Introduction to Databases](https://en.wikiversity.org/wiki/Introduction_to_Databases)
+    - Reading: [The Definitive Guide to NoSQL databases](https://www.toptal.com/database/the-definitive-guide-to-nosql-databases)
+    - Reading: [Introduction to MongoDB](https://docs.mongodb.com/manual/introduction/)
 
 Hands-on:
 1. Sign-up for an mLab account 
 2. Exploring the mongo console and CRUD operations
-  - Reading: [MongoDB CRUD operations](https://docs.mongodb.com/manual/crud/)
+    - Reading: [MongoDB CRUD operations](https://docs.mongodb.com/manual/crud/)
 
 Concepts:
 1. ORM (Object Relational Mapping) and ODM (Object Document Mapping)
-  - Reading: [What is an ORM?](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
-  - Reading: [Mongoose Quick start](http://mongoosejs.com/docs/index.html)
+    - Reading: [What is an ORM?](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
+    - Reading: [Mongoose Quick start](http://mongoosejs.com/docs/index.html)
 
 Hands-on:
 1. Connecting our Express app to MongoDB with Mongoose
