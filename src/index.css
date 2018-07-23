@@ -68,3 +68,7 @@ header h1 {
     display: block;
     margin: 0 auto;
 }
+
+#new_todo_input {
+    padding: 2rem;
+}

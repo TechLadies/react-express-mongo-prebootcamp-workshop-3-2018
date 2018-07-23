@@ -51,37 +51,47 @@ export class Todos extends React.Component {
     this.setState(updatedState);
   };
 
+  renderNewTodoInput = () => {
+    return (
+      <div id="new_todo_input">
+        <label for="newTodoDescription">Add Todo</label>
+        <input
+          type="text"
+          name="newTodoDescription"
+          id="new_todo_description"
+          value={this.state.newTodoDescription}
+          onChange={this.handleOnChange}
+        />
+        <button onClick={this.handleAddTodo}>+</button>
+      </div>
+    )
+  }
+
+  renderTodos = () => {
+    return (<ul>
+      {this.state.todos.map(a => {
+        let completeClass = "";
+        if (a.isDone) {
+          completeClass = "complete";
+        }
+        return (
+          <li
+            className={completeClass}
+            onClick={() => this.handleTodoClick(a)}
+          >
+            {a.description}
+          </li>
+        );
+      })}
+    </ul>);
+  }
+
   render() {
     return (
       <div id="todos">
         <h1>My awesome todo list</h1>
-
-        <label for="new_todo">Add Todo</label>
-        <input 
-          type="text" 
-          name="newTodoDescription" 
-          id="newTodoDescription" 
-          value={this.state.newTodoDescription} 
-          onChange={this.handleOnChange}
-        />
-        <button onClick={this.handleAddTodo}>Add Todo</button>
-
-        <ul>
-          {this.state.todos.map(a => {
-            let completeClass = "";
-            if (a.isDone) {
-              completeClass = "complete";
-            }
-            return (
-              <li
-                className={completeClass}
-                onClick={() => this.handleTodoClick(a)}
-              >
-                {a.description}
-              </li>
-            );
-          })}
-        </ul>
+        {this.renderNewTodoInput()}
+        {this.renderTodos()}
       </div>
     );
   }
