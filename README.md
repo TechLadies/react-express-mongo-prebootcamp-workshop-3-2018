@@ -111,6 +111,7 @@ Hands-on:
 3. Saving Todos to the database
 
 **Extras**
+
 Topics to touch on if time permits:
 1. Explaning ES5, ES6, ES7, JS versioning, and Babel
 2. Explaining the spread operator
