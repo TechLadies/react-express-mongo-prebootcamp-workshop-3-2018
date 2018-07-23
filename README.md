@@ -80,6 +80,9 @@ Hands-on:
 Concepts:
 1. Persistence layer
 2. Databases and MongoDB
+  - Reading: [Introduction to Databases](https://en.wikiversity.org/wiki/Introduction_to_Databases)
+  - Reading: [The Definitive Guide to NoSQL databases](https://www.toptal.com/database/the-definitive-guide-to-nosql-databases)
+  - Reading: [Introduction to MongoDB](https://docs.mongodb.com/manual/introduction/)
 
 Hands-on:
 1. Sign-up for an mLab account 
@@ -87,7 +90,9 @@ Hands-on:
   - Reading: [MongoDB CRUD operations](https://docs.mongodb.com/manual/crud/)
 
 Concepts:
-1. ORM (Object Relational Mapping)
+1. ORM (Object Relational Mapping) and ODM (Object Document Mapping)
+  - Reading: [What is an ORM?](https://stackoverflow.com/questions/1279613/what-is-an-orm-and-where-can-i-learn-more-about-it)
+  - Reading: [Mongoose Quick start](http://mongoosejs.com/docs/index.html)
 
 Hands-on:
 1. Connecting our Express app to MongoDB with Mongoose
