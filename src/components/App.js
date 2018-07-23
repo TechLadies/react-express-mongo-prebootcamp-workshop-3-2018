@@ -10,7 +10,7 @@ class App extends React.Component {
       <div>
         <Header />
         <About />
-        <Todos />
+        <Todos title="Most awesome todo list"/>
       </div>
     );
   }

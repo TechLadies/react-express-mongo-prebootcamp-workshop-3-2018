@@ -89,7 +89,7 @@ export class Todos extends React.Component {
   render() {
     return (
       <div id="todos">
-        <h1>My awesome todo list</h1>
+        <h1>{this.props.title}</h1>
         {this.renderNewTodoInput()}
         {this.renderTodos()}
       </div>
