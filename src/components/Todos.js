@@ -11,8 +11,31 @@ export class Todos extends React.Component {
         description: "buy oranges",
         isDone: true
       }
-    ]
+    ],
+    newTodoDescription:  "",
   };
+
+  handleOnChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value,
+    });
+  }
+
+  handleAddTodo = () => {
+    const newTodo = {
+      description: this.state.newTodoDescription,
+      isDone: false,
+    };
+
+    this.setState({
+      todos: [
+        ...this.state.todos,
+        newTodo,
+      ],
+      newTodoDescription: "",
+    });
+  }
 
   handleTodoClick = currentTodo => {
     if (currentTodo.isDone) {
@@ -32,6 +55,17 @@ export class Todos extends React.Component {
     return (
       <div id="todos">
         <h1>My awesome todo list</h1>
+
+        <label for="new_todo">Add Todo</label>
+        <input 
+          type="text" 
+          name="newTodoDescription" 
+          id="newTodoDescription" 
+          value={this.state.newTodoDescription} 
+          onChange={this.handleOnChange}
+        />
+        <button onClick={this.handleAddTodo}>Add Todo</button>
+
         <ul>
           {this.state.todos.map(a => {
             let completeClass = "";
