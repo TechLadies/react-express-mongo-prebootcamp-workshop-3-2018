@@ -57,7 +57,7 @@ Concepts:
 Hands-on:
 1. Implementing client-side routing with React Router
 
-### NodeJS and Express (~2hrs)
+### NodeJS, Express and MongoDB (~2hrs)
 Setup:
 - Install express generator: `npm i -g express-generator`
 - Install mongodb: `brew install mongodb` or `choco install mongodb`
