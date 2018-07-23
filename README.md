@@ -34,6 +34,7 @@ Concepts:
 
 Hands-on:
 1. Making an API call on `componentDidMount` to show a random cat image
+  - Reading: [The Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 
 Concepts:
 1. Client-side routing

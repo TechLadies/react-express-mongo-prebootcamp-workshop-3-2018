@@ -64,3 +64,7 @@ header h1 {
     font-size: 3rem;
 }
 
+#about img {
+    display: block;
+    margin: 0 auto;
+}
