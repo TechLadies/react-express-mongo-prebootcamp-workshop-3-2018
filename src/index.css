@@ -72,3 +72,28 @@ header h1 {
 #new_todo_input {
     padding: 2rem;
 }
+
+header {
+  display: flex;
+}
+
+header nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  color: black;
+}
