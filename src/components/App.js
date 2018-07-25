@@ -30,32 +30,28 @@ class App extends React.Component {
   };
 
   render() {
-    return <ParentComponent />
+    return (
+      <div>
+        <h1>My awesome todo list</h1>
+        <ul>
+          {this.state.todos.map(a => {
+            let completeClass = "";
+            if (a.isDone) {
+              completeClass = "complete";
+            }
+            return (
+              <li
+                className={completeClass}
+                onClick={() => this.handleTodoClick(a)}
+              >
+                {a.description}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
   }
-
-  // render() {
-  //   return (
-  //     <div>
-  //       <h1>My awesome todo list</h1>
-  //       <ul>
-  //         {this.state.todos.map(a => {
-  //           let completeClass = "";
-  //           if (a.isDone) {
-  //             completeClass = "complete";
-  //           }
-  //           return (
-  //             <li
-  //               className={completeClass}
-  //               onClick={() => this.handleTodoClick(a)}
-  //             >
-  //               {a.description}
-  //             </li>
-  //           );
-  //         })}
-  //       </ul>
-  //     </div>
-  //   );
-  // }
 }
 
 export default App;
