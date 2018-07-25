@@ -14,10 +14,21 @@ const todos = [
 ];
 
 todosRouter.get('/todos', getTodos);
-function getTodos(req, res, next) {
+function getTodos(_req, res) {
   res
     .status(200)
     .json({ todos });
+}
+
+todosRouter.post('/todos', addTodo);
+function addTodo(req, res) {
+  const newTodo = req.body.todo;
+
+  todos.push(newTodo);
+
+  res
+    .status(201)
+    .json({ todo: newTodo });
 }
 
 module.exports = { todosRouter }
