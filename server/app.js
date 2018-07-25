@@ -1,12 +1,18 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const mongoose = require('mongoose');
 
 const { router } = require('./routes');
 
 const app = express();
+
+const DB_USER = 'tjjjwxzq';
+const DB_PASSWORD = 'password123';
+// Connect to mongodb
+mongoose.connect(`mongodb://${DB_USER}:${DB_PASSWORD}@ds243491.mlab.com:43491/tjjjwxzq-tl-prebootcamp-workshop-3-app`)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
