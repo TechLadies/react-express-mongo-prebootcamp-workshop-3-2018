@@ -30,6 +30,18 @@ export class Todos extends React.Component {
       description: this.state.newTodoDescription,
       isDone: false,
     };
+    
+    const body = {
+      todo: newTodo,
+    };
+    fetch(
+      "/api/v1/todos", 
+      {
+        method: 'post',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      }
+    );
 
     this.setState({
       todos: [
