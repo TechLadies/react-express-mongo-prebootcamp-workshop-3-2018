@@ -1,19 +1,22 @@
 import React from "react";
 
 export class Todos extends React.Component {
-  state = {
-    todos: [
-      {
-        description: "buy grapes",
-        isDone: false
-      },
-      {
-        description: "buy oranges",
-        isDone: true
-      }
-    ],
-    newTodoDescription:  "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      todos: [],
+      newTodoDescription: "",
+    };
+  }
+
+  async componentDidMount() {
+    const response = await fetch("/todos");
+    const { todos } = await response.json();
+
+    this.setState({
+      todos,
+    });
+  }
 
   handleOnChange = event => {
     const { name, value } = event.target;
@@ -54,7 +57,7 @@ export class Todos extends React.Component {
   renderNewTodoInput = () => {
     return (
       <div id="new_todo_input">
-        <label for="newTodoDescription">Add Todo</label>
+        <label htmlFor="newTodoDescription">Add Todo</label>
         <input
           type="text"
           name="newTodoDescription"
@@ -97,4 +100,3 @@ export class Todos extends React.Component {
   }
 
 }
-

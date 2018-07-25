@@ -26,16 +26,16 @@ ul {
     padding: 0;
 }
 
-ul li {
+#todos ul li {
     cursor: pointer;
     padding: 1rem 2rem;
 }
 
-ul li:hover {
+#todos ul li:hover {
     background: #eee;
 }
 
-ul li.complete {
+#todos ul li.complete {
     text-decoration: line-through;
 }
 
@@ -87,6 +87,11 @@ nav ul {
   display: flex;
   align-items: center;
   height: 100%;
+  margin-right: 50px;
+}
+
+nav ul li {
+  margin: 0 10px;
 }
 
 nav ul a {
@@ -95,5 +100,5 @@ nav ul a {
 }
 
 nav ul a:hover {
-  color: black;
+  color: rgb(200, 200, 200);
 }
