@@ -10,7 +10,7 @@ export class Todos extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await fetch("/todos");
+    const response = await fetch("/api/v1/todos");
     const { todos } = await response.json();
 
     this.setState({
