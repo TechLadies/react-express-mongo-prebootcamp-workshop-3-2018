@@ -17,6 +17,9 @@ Now you can follow the [setup guide instructions to install NodeJS with asdf!](h
 ## Pre-requisites
 You should have come for workshop 2 and built a simple Todo app following the code [here](https://github.com/spinningarrow/react-todo-list). We will be extending whatever you built in workshop 2.
 
+## Slides
+Slides for this workshop can be viewed here https://docs.google.com/presentation/d/1Hr_-35dB0t9-EOS8p5Rto1KlVsBAbFmp8mCD5yzuQg4/edit?usp=sharing
+
 ## What we will cover during this workshop
 Here's a breakdown of the workshop contents along with links to relevant reading material for those who have time to dig deeper!
 
